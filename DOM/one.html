@@ -5,13 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom learning</title>
 </head>
-<body>
+<style>
+    .bg-black{
+        background-color:#212121;
+        color:#fff;
+    }
+</style>
+<body class="bg-black">
     <div class="bg-black">
-        <h1 class="heading">DOM learning </h1>
+        <h1 class="heading">DOM learning <span style="display: none;">test text </span></h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro itaque soluta omnis! Pariatur molestias blanditiis.</p>
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+        </ul>
     </div>
 </body>
 </html>
+
+<!-- 
+HTML Collection
+title -- title 
+title.textContent -- entire text 
+title.innerText  --only visible text will come
+title.innerHTML --all  text containing HTML
+title.innerTe--
+
+query selector
+getElementById-
+document.getElementsByClassName('heading')
+
+1.document.querySelector('h1') -- first h1 will render
+2. document.querySelector('#title') -- id 
+3.  document.querySelector('class')
+4. document.querySelector('input[yype = "password"]')
+
+
+*****how to change color in unordered list
+document.querySelector('ul')
+const myul = document.querySelector('ul')
+myul.querySelector('li')
+const turnGreen = myul.querySelector('li')
+turnGreen.style.backgroundColor = "green"
+turnGreen.style.backgroundColor = "10px"
+
+document.querySelectorAll('li')   // nodelist
+
+const tempList = document.querySelectorAll('li')
+tempList
+tempList.style.color = 'green'
+tempLiList[0].style.color = 'green'
+
+
+document.getElementByClassName('list-item')
+//convert HTMLCOLLECTION INTO ARRAY 
+ Array.from(tempclassList)
+
+-->
+
+
+
+
+
+
 <!-- console.log(window)
     console.log(window.document)
     console.dir(document)
@@ -21,13 +78,4 @@
 
 
     **********document.getElementById('firstHeading')
-    **********document.getElementById('firstHeading').innerHTML = "<h1>Chai aur Code</h1>"  // new values edition
-
-    
-
-
-
-
-
-
--->
+    **********document.getElementById('firstHeading').innerHTML = "<h1>Chai aur Code</h1>"  // new values edition      -->
